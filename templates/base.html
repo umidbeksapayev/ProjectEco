@@ -1,0 +1,30 @@
+{%load static%}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <title>{%block title%}Eco System{%endblock%}</title>
+</head>
+
+<header>
+    <nav>
+        <li><a href="{% url 'home'%}">Home</a></li>
+        <li><a href="{% url 'issues'%}">Eco Issues</a></li>
+        <li><a href="{% url 'about'%}">About</a></li>
+        <li><a href="{% url 'society'%}">Society</a></li>
+        <li><a href="{%url 'donation'%}">Donation</a></li>
+        <li><a href="{%url 'journal'%}">Journal</a></li>
+        <li><a href="{%url 'contact'%}">Contact</a></li>
+    </nav>
+</header>
+
+{%block content%}
+
+
+{%endblock%}
+
+<footer>
+
+</footer>

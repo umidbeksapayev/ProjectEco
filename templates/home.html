@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{%block content%}
+<h1>Home</h1>
+    {%for i in eco %}
+        <h2>{{i.title}}</h2>
+        <img src="{{i.image}}" alt="" width="350">
+        <p>{{i.body}}... <a href="{% url 'detail' i.pk%}">batafsil</a></p>
+        <h5>Mualif:{{i.author}} | {{i.created_time | date:"y-m-d : H:i:s"}}</h5>
+        <hr>
+    {%endfor%}
+{%endblock%}
